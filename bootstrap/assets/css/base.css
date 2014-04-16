@@ -1,0 +1,379 @@
+﻿/**
+ * Tweaks to improve the theme
+ */
+ 
+
+/**
+ * Helpers
+ */ 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+.align-r {
+  text-align: right;
+}
+
+
+/**
+ * Clearfixes
+ */
+.clear-all {
+  clear: both;
+}
+
+
+/* Small devices (phones) */
+@media (max-width: 767px) {
+  .cf-xs { clear: both; }
+  .breadcrumb > li {
+    display: inline;
+  }
+}
+
+/* Small devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .cf-sm { clear: both; }
+}
+/* Small devices and below (tablets) */
+@media (max-width: 991px) {
+  .cf-sm-b { clear: both; }
+}
+
+
+/* Medium devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199) {
+  .cf-md { clear: both; }
+}
+/* Medium devices and below (desktops) */
+@media (max-width: 1199) {
+  .cf-md-b { clear: both; }
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .cf-lg { clear: both; }
+}
+
+
+
+/*
+ * Layout
+ *
+ * Fixes iIOS overflow scroll
+ */
+#offcanvas-container {
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  aside h2 {
+    font-size: 20px;
+  }
+}
+
+
+/**
+ * Block admin links
+ */ 
+ul, ol {
+  padding-left: 20px;
+}
+
+
+/**
+ * Block admin links
+ */ 
+.block {
+  position: relative;
+}
+  .block .admin-links {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+    .block:hover .admin-links {
+      display: inline-block;
+    }
+    
+    
+/*
+ * Tables
+ */
+table.tablelines {
+	border-width: 1px;
+	border-spacing: 1px;
+	border-style: none;
+	border-color: #dddddd;
+	border-collapse: collapse;
+	background-color: white;
+}
+table.tablelines th {
+	border-width: 1px;
+	padding: 3px;
+	border-style: inset;
+	border-color: #dddddd;
+	background-color: white;
+	-moz-border-radius: ;
+}
+table.tablelines td {
+	border-width: 1px;
+	padding: 3px;
+	border-style: inset;
+	border-color: #dddddd;
+	background-color: white;
+	-moz-border-radius: ;
+}
+
+ 
+/**
+ * Tab tweaks
+ */
+.nav-tabs,
+.nav-pills {
+  margin-bottom: 20px;
+}
+  .nav-tabs.secondary>li>a {
+    padding: 5px 10px;
+  }
+  
+  
+/**
+ * Tables
+ */
+table th.checkbox,
+table td.checkbox {
+  margin: 0;
+}
+
+
+/*
+ * Google maps
+ */
+.mapcanvas label { width: auto; display:inline; }
+.mapcanvas img { max-width: none; }
+
+ 
+
+/**
+ * Header
+ */
+header {
+	padding: 10px 0;
+}
+
+		header .contact-details {
+			clear: right
+		}
+
+
+/**
+ * Primary navigation
+ */
+#primary-links {
+	margin-bottom: 20px;
+  border: 0px;
+  border-radius: 0px;
+}
+  #primary-links .navbar .navbar-collapse {
+    padding: 0px;
+  }
+    #primary-links .navbar .navbar-collapse .navbar-right {
+      padding: 0px;
+    }
+    #primary-links .navbar .navbar-collapse .navbar-nav {
+      margin: 0px;
+    }
+  #primary-links .navbar-brand {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+    #primary-links .navbar-brand img {
+      width: auto;
+      height: auto;
+      max-height: 40px;
+      max-width: 240px;
+    }
+    
+.navbar-utilities {
+  margin-top: 5px;
+}
+
+
+/**
+ * Contact details
+ */	      
+
+.contact-details.visible-xs {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #f8f8f8;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+  .contact-details.visible-xs .btn:first-child {
+    margin-right: 5px;
+  }
+
+
+/**
+ * Mobile nav helper
+ */
+#m-nav-helper {
+  margin-top: -20px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+  #m-nav-helper button {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 0;
+  }
+  #m-nav-helper .breadcrumb {
+    margin-bottom: 0;
+  }
+
+
+/**
+ * Main content wrapper
+ */			
+#main {
+	margin-bottom: 20px;
+}
+	
+  
+/**
+ * Jumbotron
+ */
+.jumbotron {
+	margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+
+/**
+ * Content area
+ */
+#content-area {
+	margin-bottom: 20px;
+}
+
+
+/**
+ * Staff directory
+ */
+#staff-directory {
+  margin: 0 -15px;
+}
+  #staff-directory:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #staff-directory .profile {
+    margin-bottom: 20px;
+  }
+
+
+/**
+ * Calculators
+ */
+.tabs.calculator-tabs {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.tabs.calculator-tabs:before,
+.tabs.calculator-tabs:after {
+  display: table;
+  content: " ";
+}
+
+.tabs.calculator-tabs:after {
+  clear: both;
+}
+
+.tabs.calculator-tabs:before,
+.tabs.calculator-tabs:after {
+  display: table;
+  content: " ";
+}
+
+.tabs.calculator-tabs:after {
+  clear: both;
+}
+
+.tabs.calculator-tabs > li {
+  position: relative;
+  display: block;
+}
+
+.tabs.calculator-tabs > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.tabs.calculator-tabs > li > a:hover,
+.tabs.calculator-tabs > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+.tabs.calculator-tabs > li.disabled > a {
+  color: #999999;
+}
+
+.tabs.calculator-tabs > li.disabled > a:hover,
+.tabs.calculator-tabs > li.disabled > a:focus {
+  color: #999999;
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+.tabs.calculator-tabs .open > a,
+.tabs.calculator-tabs .open > a:hover,
+.tabs.calculator-tabs .open > a:focus {
+  background-color: #eeeeee;
+  border-color: #428bca;
+}
+.tabs.calculator-tabs > li {
+  float: left;
+}
+
+.tabs.calculator-tabs > li > a {
+  border-radius: 5px;
+}
+
+.tabs.calculator-tabs > li + li {
+  margin-left: 2px;
+}
+
+.tabs.calculator-tabs > li > a.active,
+.tabs.calculator-tabs > li > a.active:hover,
+.tabs.calculator-tabs > li > a.active:focus {
+  color: #ffffff;
+  background-color: #428bca;
+}
+
+/**
+ * No JS tweaks
+ */
+html.no-js .no-js {
+  display: none;
+}
+html.no-js .collapse {
+  display: block;
+}
+html.no-js .navbar-toggle {
+  display: none;
+}

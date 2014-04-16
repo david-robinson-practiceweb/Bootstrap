@@ -1,0 +1,9 @@
+﻿/*
+ * IE 7
+ */
+
+.container {
+  max-width: 970px;
+  width: 970px;
+  min-width: 970px;
+}

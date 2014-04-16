@@ -1,0 +1,52 @@
+﻿; $Id$
+
+name        = Bootstrap
+description = A Twitter Bootstrap starter theme.
+screenshot = screenshot.png
+core       = 6.x
+engine = phptemplate
+
+stylesheets[all][] = assets/css/bootstrap.min.css
+stylesheets[all][] = assets/css/offcanvas.css
+stylesheets[all][] = assets/css/base.css
+stylesheets[all][] = assets/css/system.css
+
+; Overrides
+stylesheets[all][] = date.css
+stylesheets[all][] = content-module.css
+stylesheets[all][] = content-module.css
+stylesheets[all][] = ctools.css
+stylesheets[all][] = datepicker.css
+stylesheets[all][] = jquery.timeentry.css
+stylesheets[all][] = filefield.css
+stylesheets[all][] = logintoboggan.css
+stylesheets[all][] = pw_staff_profile.css
+stylesheets[all][] = pw_mailshots.css
+stylesheets[all][] = fieldgroup.css
+stylesheets[all][] = shared_dates_and_deadlines.css
+
+conditional-stylesheets[if IE 7][all][] = assets/css/ie7.css
+
+scripts[] = assets/js/bootstrap.min.js
+scripts[] = assets/js/script.js
+
+regions[banner]               = banner
+regions[content_top]       = content top
+regions[content_bottom] = content bottom
+regions[left]                     = sidebar left
+regions[right]                   = sidebar right
+regions[bottom]               = bottom
+regions[footer]                = footer
+regions[closure_blocks]   = closure blocks
+regions[modal]                 = modal
+
+features[] = logo
+features[] = name
+features[] = slogan
+; features[] = mission
+; features[] = node_user_picture
+; features[] = comment_user_picture
+features[] = search
+features[] = favicon
+features[] = primary_links
+features[] = secondary_links
